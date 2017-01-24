@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Q4Task</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_task">Task</string>
+    <string name="action_info">Info</string>
+    <string name="title_activity_task">Q4Task</string>
 
     <string name="save">Save</string>
     <string name="edit">Edit</string>
     <string name="description">Description</string>
     <string name="title">Title</string>
+    <string name="delete">Delete</string>
+
+    <string name="text_info_urgent_important">There are two types of urgent and important activities: ones that you could not have foreseen, and others that you left until the last minute.</string>
+    <string name="text_info_important">These are the activities that help you achieve your personal and professional goals, and complete important work. </string>
+    <string name="text_info_urgent">Urgent but not important tasks are things that prevent you from achieving your goals. Ask yourself whether you can reschedule or delegate them.</string>
+    <string name="text_info_no_urgent_important">These activities are just a distraction – avoid them if possible.</string>
 
     <string-array name="string_array_estimate">
         <item>5 Minute</item>

@@ -99,7 +99,7 @@ public class TaskFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
+            case R.id.action_info:
                 //Do nothing
                 break;
             case R.id.action_save_edit:
@@ -157,10 +157,24 @@ public class TaskFragment extends Fragment {
                 return !mIsEditable;
             }
         });
-
-        mEstimation.setEnabled(enable);
-        mIsFrog.setEnabled(enable);
-        mIsSolved.setEnabled(enable);
+        mEstimation.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return !mIsEditable;
+            }
+        });
+        mIsFrog.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return !mIsEditable;
+            }
+        });
+        mIsSolved.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return !mIsEditable;
+            }
+        });
     }
 
     void setValues(Cursor values) {

@@ -8,9 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name="com.alz313.q4task.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_task"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden">
@@ -20,21 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.alz313.q4task.TaskActivity"
+            android:name=".TaskActivity"
             android:label="@string/title_activity_task"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
 
         <provider
-            android:name="com.alz313.q4task.Db.TaskProvider"
+            android:name=".Db.TaskProvider"
             android:authorities="com.alz313.q4task"
             android:enabled="true"
             android:exported="true">
         </provider>
 
+        <activity android:name=".InfoActivity">
+        </activity>
     </application>
 
 </manifest>

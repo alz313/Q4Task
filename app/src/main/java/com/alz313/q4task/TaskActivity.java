@@ -26,5 +26,7 @@ public class TaskActivity extends AppCompatActivity {
                     .add(R.id.activity_task_frame_layout, fragment)
                     .commit();
         }
+
+
     }
 }
